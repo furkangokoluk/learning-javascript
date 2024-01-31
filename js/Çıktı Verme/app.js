@@ -1,3 +1,10 @@
+// Çıktı verme fonksiyonları
+/*
+    document.write()
+    console.log()
+    alert()
+*/
+
 // Document write ile cikti verme.
 document.write("Gümüşhane Üniversitesi");
 
