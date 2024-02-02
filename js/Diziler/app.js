@@ -29,71 +29,84 @@ console.log("\r\n\r\n")
     indexOf : elemanın index numarasını verir.
     includes: verilen elemanı içeriyor mu ona bakar
 */
-// Ürün arama uygulaması
 
-let product1 = {
-    name: "Acer Nitro",
-    category: "Teknoloji",
-    price: 12.000
-}
+let arabalar = ["bmw","toyota","renault","mercedes","porsche"];
 
-let product2 = {
-    name: "Acer Gaming",
-    category: "Teknoloji",
-    price: 14.000
-}
+//PUSH METOT
+// console.log(arabalar.length);
+// arabalar.push("opel");
+// console.log(arabalar);
 
-let product3 = {
-    name: "Lenovo Gaming",
-    category: "Teknoloji",
-    price: 22.000
-}
+//UNSHIFT METOT
+// arabalar.unshift("hundai");
+// console.log(arabalar);
 
-let product4 = {
-    name: "Lenovo İdeapad",
-    category: "Teknoloji",
-    price: 15.000
-}
+//POP METOT
+// let silinenEleman = arabalar.pop();
+// console.log(arabalar);
+// console.log(silinenEleman);
 
-let product5 = {
-    name: "Lenovo Office",
-    category: "Teknoloji",
-    price: 7.000
-}
-let product6 = {
-    name: "Asus Rog",
-    category: "Teknoloji",
-    price: 37.000
-}
-let product7 = {
-    name: "Asus Tuf",
-    category: "Teknoloji",
-    price: 29.000
-}
-let product8 = {
-    name: "Asus ViveBook",
-    category: "Teknoloji",
-    price: 25.000
-}
+//SHIFT METOT
+// let silinenEleman =arabalar.shift();
+// console.log(arabalar);
+// console.log(silinenEleman);
 
-let products = [product1, product2, product3, product4, product5, product6, product7, product8];
-let filterProducts = [];
-let inputProductName = prompt("Aramak İstediğiniz Ürünü Giriniz..");
+//SPLİCE METOT
+// console.log(arabalar);
+// arabalar.splice(3,0,"hundai");
+// console.log(arabalar);
 
-function getFilterProduct(products) {
-    products.forEach(function (product) {
-        if (product.name.toUpperCase().includes(inputProductName.toUpperCase(), 0)) {
-            filterProducts.push(product);
-        }
-    })
-}
+// arabalar.splice(1,2);
+// console.log(arabalar);
 
-function printFilterProduct(filterProducts) {
-    filterProducts.forEach(function (product) {
-        console.log("-----------------------");
-        console.log("|" + product.name + "|" + product.price + "|" + product.category);
-    })
-}
+// arabalar.splice(2,2,"hundai");
+// console.log(arabalar);
 
-getFilterProduct(products);
-printFilterProduct(filterProducts);
+//TOSTRİNG METOT
+// console.log(typeof arabalar);
+// let stringArabalar = arabalar.toString();
+// console.log(typeof stringArabalar);
+// console.log(stringArabalar);
+
+//JOIN METOT
+// let stringArabalar = arabalar.join("?");
+// console.log(stringArabalar);
+
+//CONCAT METOT 
+// let birlesmisDizi =  arabalar1.concat(arabalar2);
+// console.log(birlesmisDizi);
+
+//SLİCE METOT
+// console.log(arabalar);
+// let ayriDizi = arabalar.slice(2);
+// console.log(ayriDizi);
+
+//LENGTH ÖZELLİK
+// console.log(arabalar.length);
+
+//REVERSE METOT
+// console.log(arabalar);
+// arabalar.reverse();
+// console.log(arabalar);
+
+//SPLİT METOT
+// let isimler = "Enes,Ali,Veli";
+
+//  let isimlerDizi = isimler.split(",");
+//  console.log(typeof isimlerDizi);
+
+//INDEXOF METOT
+// let index = arabalar.indexOf("bmw");
+// if(index==0){
+//     console.log("belirtilen eleman vardır");
+// }else{
+//     console.log("elaman yoktur");
+// }
+
+//INCLUDES METOT
+// let sonuc = arabalar.includes("renault232");
+// if(sonuc){
+//     console.log("eleman vardır");
+// }else{
+//     console.log("eleman yoktur");
+// }
